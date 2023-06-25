@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ToDo</string>
+    <string name="home_botao_login">Entrar</string>
+    <string name="home_botao_cadastro">Cadastro</string>
+    <string name="cadastro_textview_titulo">Olá!</string>
+    <string name="cadastro_textview_subtitulo">Crie uma nova conta.</string>
+    <string name="cadastro_hint_nome">Nome</string>
+    <string name="cadastro_hint_email">Email</string>
+    <string name="cadastro_hint_senha">Senha</string>
+    <string name="cadastro_botao_cadastrar">Cadastrar</string>
+    <string name="cadastro_textview_contaexistente">Já possui conta?</string>
+    <string name="cadastro_textview_login">Faça login.</string>
 </resources>
