@@ -45,4 +45,18 @@ class AutenticacaoService {
 
         return response
     }
+    
+    suspend fun enviarEmailRecuperacaoDeSenha(email: String) : GenericResponseDTO {
+        var response = GenericResponseDTO(false, null)
+        
+        try {
+            var task = auth.sendPasswordResetEmail(email).await()
+            response.Sucesso = true
+            response.Mensagem = "E-mail enviado com sucesso!"
+        } catch (e: Exception) {
+            response.Mensagem = e.message
+        }
+
+        return response
+    }
 }

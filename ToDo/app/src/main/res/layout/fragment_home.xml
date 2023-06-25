@@ -42,4 +42,5 @@
         app:layout_constraintTop_toBottomOf="@+id/btnTelaLogin"
         app:strokeColor="@color/magenta"
         app:strokeWidth="1dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

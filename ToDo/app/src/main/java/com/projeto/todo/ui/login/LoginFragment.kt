@@ -34,6 +34,7 @@ class LoginFragment : Fragment() {
 
         binding.btnVoltarLogin.setOnClickListener { navigation.navigate(R.id.action_loginFragment_to_homeFragment) }
         binding.textViewCadastro.setOnClickListener { navigation.navigate(R.id.action_loginFragment_to_cadastroFragment) }
+        binding.textViewSenhaEsquecida.setOnClickListener { navigation.navigate(R.id.action_loginFragment_to_recuperacaoSenhaFragment) }
         binding.btnLogin.setOnClickListener {
             var email = binding.inputEmailLogin.text.toString()
             var senha = binding.inputSenhaLogin.text.toString()

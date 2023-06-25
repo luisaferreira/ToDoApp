@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_loginFragment_to_tarefasFragment"
             app:destination="@id/tarefasFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_recuperacaoSenhaFragment"
+            app:destination="@id/recuperacaoSenhaFragment" />
     </fragment>
     <fragment
         android:id="@+id/cadastroFragment"
@@ -49,4 +52,9 @@
         android:name="com.projeto.todo.ui.tarefas.TarefasFragment"
         android:label="fragment_tarefas"
         tools:layout="@layout/fragment_tarefas" />
+    <fragment
+        android:id="@+id/recuperacaoSenhaFragment"
+        android:name="com.projeto.todo.ui.recuperacaosenha.RecuperacaoSenhaFragment"
+        android:label="fragment_recuperacao_senha"
+        tools:layout="@layout/fragment_recuperacao_senha" />
 </navigation>

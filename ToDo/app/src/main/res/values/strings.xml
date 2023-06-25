@@ -15,6 +15,7 @@
     <string name="login_textview_senhaesquecida">Esqueceu sua senha?</string>
     <string name="login_textview_containexistente">Ainda não possui uma conta?</string>
     <string name="login_textview_cadastro">Cadastre-se.</string>
+    <string name="recuperacaosenha_botao_enviaremail">Enviar e-mail</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
