@@ -1,4 +1,4 @@
-package com.projeto.todo
+package com.projeto.todo.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.projeto.todo.R
 import com.projeto.todo.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

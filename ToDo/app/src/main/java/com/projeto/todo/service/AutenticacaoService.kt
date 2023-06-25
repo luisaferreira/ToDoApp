@@ -31,4 +31,18 @@ class AutenticacaoService {
 
         return response
     }
+
+    suspend fun entrarComEmailESenha(email: String, senha: String) : GenericResponseDTO {
+        var response = GenericResponseDTO(false, null)
+
+        try {
+            var task = auth.signInWithEmailAndPassword(email, senha).await()
+            response.Sucesso = true
+            response.Mensagem = "Login realizado com sucesso!"
+        } catch(e: Exception) {
+            response.Mensagem = e.message
+        }
+
+        return response
+    }
 }
