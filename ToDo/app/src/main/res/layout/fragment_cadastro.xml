@@ -6,8 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.cadastro.CadastroFragment">
 
+    <ImageView
+        android:id="@+id/btnVoltarCadastro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textViewTitulo"
+        android:id="@+id/textViewTituloCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
@@ -15,10 +25,10 @@
         android:text="@string/cadastro_textview_titulo"
         android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVoltar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltarCadastro" />
 
     <TextView
-        android:id="@+id/textViewSubtitulo"
+        android:id="@+id/textViewSubtituloCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
@@ -26,7 +36,7 @@
         android:text="@string/cadastro_textview_subtitulo"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloCadastro" />
 
     <EditText
         android:id="@+id/inputNomeCadastro"
@@ -39,7 +49,7 @@
         android:inputType="text"
         android:minHeight="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtituloCadastro" />
 
     <EditText
         android:id="@+id/inputEmailCadastro"
@@ -101,15 +111,4 @@
         android:textColor="@color/magenta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewContaExistente" />
-
-    <ImageView
-        android:id="@+id/btnVoltar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/icon_arrow_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

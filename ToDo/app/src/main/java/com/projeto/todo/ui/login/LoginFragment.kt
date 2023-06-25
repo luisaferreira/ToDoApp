@@ -26,9 +26,8 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnRedirecionarCadastro.setOnClickListener {
-            navigation.navigate(R.id.action_loginFragment_to_cadastroFragment)
-        }
+        binding.btnVoltarLogin.setOnClickListener { navigation.navigate(R.id.action_loginFragment_to_homeFragment) }
+        binding.textViewCadastro.setOnClickListener { navigation.navigate(R.id.action_loginFragment_to_cadastroFragment) }
 
     }
 }

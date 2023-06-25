@@ -10,4 +10,9 @@
     <string name="cadastro_botao_cadastrar">Cadastrar</string>
     <string name="cadastro_textview_contaexistente">Já possui conta?</string>
     <string name="cadastro_textview_login">Faça login.</string>
+    <string name="login_textview_titulo">Bem-vindo!</string>
+    <string name="login_textview_subtitulo">Faça login para continuar.</string>
+    <string name="login_textview_senhaesquecida">Esqueceu sua senha?</string>
+    <string name="login_textview_containexistente">Ainda não possui uma conta?</string>
+    <string name="login_textview_cadastro">Cadastre-se.</string>
 </resources>

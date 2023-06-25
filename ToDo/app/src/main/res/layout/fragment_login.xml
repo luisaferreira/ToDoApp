@@ -6,24 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".ui.login.LoginFragment" >
 
+    <ImageView
+        android:id="@+id/btnVoltarLogin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/icon_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_textview_titulo"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltarLogin" />
+
+    <TextView
+        android:id="@+id/textViewSubtituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_textview_subtitulo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLogin" />
+
     <EditText
         android:id="@+id/inputEmailLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/cadastro_hint_email"
         android:inputType="text"
         android:minHeight="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtituloLogin" />
 
     <EditText
         android:id="@+id/inputSenhaLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="@string/cadastro_hint_senha"
         android:inputType="textPassword"
         android:minHeight="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,17 +68,46 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Button"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/magenta"
+        android:text="@string/home_botao_login"
+        app:cornerRadius="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputSenhaLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSenhaEsquecida" />
 
-    <Button
-        android:id="@+id/btnRedirecionarCadastro"
+    <TextView
+        android:id="@+id/textViewContaInexistente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="25dp"
-        android:text="Button"
+        android:text="@string/login_textview_containexistente"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/textViewCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/login_textview_cadastro"
+        android:gravity="center"
+        android:textColor="@color/magenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContaInexistente" />
+
+    <TextView
+        android:id="@+id/textViewSenhaEsquecida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="end"
+        android:text="@string/login_textview_senhaesquecida"
+        android:textColor="@color/magenta"
+        app:layout_constraintTop_toBottomOf="@+id/inputSenhaLogin"
+        tools:layout_editor_absoluteX="244dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

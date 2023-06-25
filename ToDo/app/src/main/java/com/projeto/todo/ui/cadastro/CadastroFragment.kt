@@ -35,7 +35,7 @@ class CadastroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.textViewLogin.setOnClickListener { navigation.navigate(R.id.action_cadastroFragment_to_loginFragment) }
-        binding.btnVoltar.setOnClickListener { navigation.navigate(R.id.action_cadastroFragment_to_homeFragment) }
+        binding.btnVoltarCadastro.setOnClickListener { navigation.navigate(R.id.action_cadastroFragment_to_homeFragment) }
         binding.btnCadastro.setOnClickListener {
             var usuario = validarInfoUsuario()
 
