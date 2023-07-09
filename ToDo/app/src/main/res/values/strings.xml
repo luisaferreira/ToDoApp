@@ -16,6 +16,11 @@
     <string name="login_textview_containexistente">Ainda não possui uma conta?</string>
     <string name="login_textview_cadastro">Cadastre-se.</string>
     <string name="recuperacaosenha_botao_enviaremail">Enviar e-mail</string>
+    <string name="adicionartarefa_hint_nometarefa">Nome da tarefa</string>
+    <string name="adicionartarefa_hint_descricaotarefa">Descrição de tarefa</string>
+    <string name="adicionartarefa_hint_data">Data de vencimento</string>
+    <string name="adicionartarefa_botao_cancelar">Cancelar</string>
+    <string name="adicionartarefa_botao_adicionar">Adicionar Tarefa</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

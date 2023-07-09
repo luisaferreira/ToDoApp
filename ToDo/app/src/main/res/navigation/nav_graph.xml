@@ -17,11 +17,11 @@
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_tarefasFragment"
-            app:destination="@id/tarefasFragment" />
-        <action
             android:id="@+id/action_loginFragment_to_recuperacaoSenhaFragment"
             app:destination="@id/recuperacaoSenhaFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_tarefasFragment"
+            app:destination="@id/tarefasFragment" />
     </fragment>
     <fragment
         android:id="@+id/cadastroFragment"
@@ -48,13 +48,26 @@
             app:destination="@id/cadastroFragment" />
     </fragment>
     <fragment
-        android:id="@+id/tarefasFragment"
-        android:name="com.projeto.todo.ui.tarefas.TarefasFragment"
-        android:label="fragment_tarefas"
-        tools:layout="@layout/fragment_tarefas" />
-    <fragment
         android:id="@+id/recuperacaoSenhaFragment"
         android:name="com.projeto.todo.ui.recuperacaosenha.RecuperacaoSenhaFragment"
         android:label="fragment_recuperacao_senha"
         tools:layout="@layout/fragment_recuperacao_senha" />
+    <fragment
+        android:id="@+id/tarefasFragment"
+        android:name="com.projeto.todo.ui.tarefas.TarefasFragment"
+        android:label="fragment_tarefas"
+        tools:layout="@layout/fragment_tarefas" >
+        <action
+            android:id="@+id/action_tarefasFragment_to_adicionarTarefaFragment"
+            app:destination="@id/adicionarTarefaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adicionarTarefaFragment"
+        android:name="com.projeto.todo.ui.adicionartarefa.AdicionarTarefaFragment"
+        android:label="fragment_adicionar_tarefa"
+        tools:layout="@layout/fragment_adicionar_tarefa" >
+        <action
+            android:id="@+id/action_adicionarTarefaFragment_to_tarefasFragment"
+            app:destination="@id/tarefasFragment" />
+    </fragment>
 </navigation>

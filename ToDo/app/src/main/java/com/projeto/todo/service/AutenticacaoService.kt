@@ -59,4 +59,10 @@ class AutenticacaoService {
 
         return response
     }
+
+    fun obterUidUsuarioLogado() : String? {
+        var usuario = auth.currentUser
+
+        return usuario?.uid
+    }
 }
