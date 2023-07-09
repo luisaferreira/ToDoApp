@@ -18,7 +18,7 @@ class AdicionarTarefaViewModel : ViewModel() {
 
     fun adicionarTarefa(tarefa: Tarefa) {
         viewModelScope.launch {
-            var uidUsuario = autenticacaoService.obterUidUsuarioLogado()
+            tarefa.UidUsuario = autenticacaoService.obterUidUsuarioLogado().toString()
             _response.value = tarefaRepository.AdicionarTarefa(tarefa)
         }
     }
